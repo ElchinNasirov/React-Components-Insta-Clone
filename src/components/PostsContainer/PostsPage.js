@@ -15,10 +15,10 @@ const PostsPage = (props) => {
     <div className="posts-container-wrapper">
       {/* map through data here to return a Post and pass data as props to Post */}
 
-      { data.map( p => (
+      { data.map( (el, i) => (
         <Post
-        key = { p }
-        post = { p }
+        key = { i }
+        post = { el }
         />
       ))}
       
